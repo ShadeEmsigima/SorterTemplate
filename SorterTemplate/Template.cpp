@@ -1,12 +1,12 @@
 #include "Template.h"
 
 
-template<Template T>
+template<typename T>
 Template::Template(std::vector<T> elements)
 {
 }
 
-
+template<typename T>
 Template::~Template(std::vector<T> elements)
 {
 }
