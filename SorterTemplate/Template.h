@@ -5,7 +5,7 @@
 
 #include <algorithm>
 
-template<typename T>
+template<typename T> //like a function, do I place the template decleration here BEFORE you start making the scope of the class?	
 class Template
 {
 private:
@@ -16,10 +16,10 @@ private:
 
 
 public:
-	Template(std::vector<T> elements);
-	~Template(std::vector<T> elements);
+	Template(/*std::vector<T> elements*/);
+	~Template(/*std::vector<T> elements*/);
 
-	auto sort(std::vector<T>)->decltype ();//why am I using decltype? is it to tell the prgram later what thing to return?
+	void sort(std::vector<T>);//why am I using decltype? is it to tell the prgram later what thing to return?
 	void printQueue(std::vector<T>);//so that you can print the vector after you have modified it
 	void splitQueue(std::vector<T> originalCopy, std::vector<T> splitLeft, std::vector<T> splitRight);
 };

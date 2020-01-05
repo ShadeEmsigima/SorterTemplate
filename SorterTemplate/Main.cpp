@@ -5,8 +5,13 @@
 int main() {
 	std::vector<std::string> colours{ "red", "green", "white", "blue", "orange", "green", "orange", "black", "purple" };
 	// use functions from <algorithm> and <functional> to do things with (ORIGINAL copies of this vector)
+	
 	// 1) split vectors into 2 new vectors: 1 with everything that comes BEFORE 'purple' in alphabetical order
 	// and 1 with everything that comes AFTER 'purple' in alphabetical order
+	template<typenme <T> 
+		void sort(colours); //call Template class function 'sort' on a vector.
+	std::vector<std::string> beforePurple{};
+	std::vector<std::string> afterPurple{};
 
 	{
 		std::vector<std::string> colours{ "red", "green", "white", "blue", "orange", "green", "orange", "black", "purple" };

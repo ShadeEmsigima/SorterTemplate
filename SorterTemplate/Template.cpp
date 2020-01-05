@@ -1,13 +1,15 @@
 #include "Template.h"
 
 
+
 template<typename T>
-Template::Template(std::vector<T> elements)
+Template<T>::Template()
 {
+	std::cout << "An object of class 'Template' has been created" + "/n";
 }
 
 template<typename T>
-Template::~Template(std::vector<T> elements)
+Template<T>::~Template()
 {
 }
 
@@ -30,8 +32,10 @@ int Template<T>::_size(std::vector<T> elements)
 	std::cout << count(elements.begin(), elements.end()) << std::endl; //still needs testing
 }
 
+
+
 template<typename T>
 void Template<T>::sort(std::vector<T>)
 {
-	//rest of function
+	std::cout << "Sorting!" << std::endl;
 }
